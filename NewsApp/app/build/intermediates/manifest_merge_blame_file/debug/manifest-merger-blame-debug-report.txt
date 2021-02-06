@@ -1,0 +1,113 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.username.newsapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:7:5-80
+12-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+13-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:8:5-119
+13-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:8:22-81
+14
+15    <application
+15-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:10:5-47:19
+16        android:allowBackup="true"
+16-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:11:13-39
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0-rc02] /Users/intreck/.gradle/caches/transforms-2/files-2.1/d23ca375c576c4f77f42c729153a7f8a/core-1.1.0-rc02/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:12:13-47
+20        android:label="@string/app_name"
+20-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:13:13-45
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:14:13-58
+22        android:supportsRtl="true"
+22-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:15:13-39
+23        android:theme="@style/AppTheme"
+23-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:16:13-44
+24        android:usesCleartextTraffic="true" >
+24-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:17:13-48
+25        <activity
+25-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:19:9-25:20
+26            android:name="com.username.newsapp.NewsPage"
+26-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:19:19-63
+27            android:label="新闻详情"
+27-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:20:19-39
+28            android:parentActivityName="com.username.newsapp.MainActivity" >
+28-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:21:19-81
+29            <meta-data
+29-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:22:13-24:73
+30                android:name="android.support.PARENT_ACTIVITY"
+30-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:23:21-67
+31                android:value="com.username.newsapp.MainActivity" />
+31-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:24:21-70
+32        </activity>
+33        <activity
+33-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:26:9-35:20
+34            android:name="com.username.newsapp.MainActivity"
+34-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:27:17-65
+35            android:label="@string/app_name"
+35-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:28:17-49
+36            android:theme="@style/AppTheme.NoActionBar" >
+36-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:29:17-60
+37            <intent-filter>
+37-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:30:13-34:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:31:17-68
+38-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:31:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:33:17-76
+40-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:33:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+45            android:name="androidx.core.content.FileProvider"
+45-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:38:17-66
+46            android:authorities="com.username.newsapp.provider"
+46-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:39:17-64
+47            android:exported="false"
+47-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:40:17-41
+48            android:grantUriPermissions="true" >
+48-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:41:17-51
+49            <meta-data
+49-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:42:13-44:61
+50                android:name="android.support.FILE_PROVIDER_PATHS"
+50-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:43:21-71
+51                android:resource="@xml/provider_paths" />
+51-->/Users/intreck/Desktop/portfolio/NewsApp/app/src/main/AndroidManifest.xml:44:21-59
+52        </provider>
+53
+54        <service
+54-->[androidx.room:room-runtime:2.2.0-beta01] /Users/intreck/.gradle/caches/transforms-2/files-2.1/2c8bca68260683f1cf1c51e3b7501546/room-runtime-2.2.0-beta01/AndroidManifest.xml:25:9-27:40
+55            android:name="androidx.room.MultiInstanceInvalidationService"
+55-->[androidx.room:room-runtime:2.2.0-beta01] /Users/intreck/.gradle/caches/transforms-2/files-2.1/2c8bca68260683f1cf1c51e3b7501546/room-runtime-2.2.0-beta01/AndroidManifest.xml:26:13-74
+56            android:exported="false" />
+56-->[androidx.room:room-runtime:2.2.0-beta01] /Users/intreck/.gradle/caches/transforms-2/files-2.1/2c8bca68260683f1cf1c51e3b7501546/room-runtime-2.2.0-beta01/AndroidManifest.xml:27:13-37
+57
+58        <provider
+58-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/intreck/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+59            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/intreck/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+60            android:authorities="com.username.newsapp.lifecycle-process"
+60-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/intreck/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+61            android:exported="false"
+61-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/intreck/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+62            android:multiprocess="true" />
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/intreck/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+63    </application>
+64
+65</manifest>
